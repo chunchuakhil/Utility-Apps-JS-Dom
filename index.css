@@ -1,0 +1,18 @@
+/* stylelint-disable no-missing-end-of-source-newline */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+  background-color: aliceblue;
+}
+ol{
+    list-style: none;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+}
+main{
+    min-height: 50vh;
+    background-color: rgba(227, 239, 250, 0.534);
+}
