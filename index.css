@@ -16,3 +16,21 @@ main {
     min-height: 50vh;
     background-color: rgba(227, 239, 250, 0.534);
 }
+#userInput,
+#userOutput {
+    height: 5rem;
+    max-width: 600px;
+    width: 600px;
+    margin: auto;
+}
+#convert_btn {
+    height: 2.8rem;
+    text-align: center;
+    width: 9rem;
+}
+.nav_main {
+    height: 3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 10rem;
+}

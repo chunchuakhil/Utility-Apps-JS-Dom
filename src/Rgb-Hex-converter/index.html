@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../index.css" />
+        <title>RGB-HEX</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <!-- <img src="" alt="logo" /> -->
+            </div>
+            <nav>
+                <ol>
+                    <li>Encoders/Decoders</li>
+                    <li>
+                        <label for="dropdown">RGB/HEX Converter:</label>
+                        <select name="RGB/HEX Converter" id="dropdown"></select>
+                    </li>
+                    <li>Timestamp Converter</li>
+                    <li>Unit Converters</li>
+                    <li>Number Base Converters</li>
+                    <li>Text Tools/String Utilities</li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <div id="userInputs_rgbToHex" style="display: none">
+                <input type="number" name="redColorInput" id="redColorInput" />
+                <input type="number" name="greenColorInput" id="greenColorInput" />
+                <input type="number" name="blueColorInput" id="blueColorInput" /><br /><br />
+                <button id="convertToHex_btn">Convert</button><br /><br />
+                <input type="text" name="hexOutPut" id="hexOutPut" />
+            </div>
+            <div id="userInputs_HexToRgb" style="display: none">
+                <input type="text" name="hexInput" id="hexInput" /><br /><br />
+                <button id="convertToRgb_btn">Convert</button><br /><br />
+                <input type="number" name="redColorOutput" id="redColorOutput" />
+                <input type="number" name="greenColorOutput" id="greenColorOutput" />
+                <input type="number" name="blueColorOutput" id="blueColorOutput" />
+            </div>
+        </main>
+    </body>
+    <script type="module" src="./index.js"></script>
+
+    <footer>@ all rights received</footer>
+</html>

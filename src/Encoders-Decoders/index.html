@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../index.css" />
+
+        <title>Encoder-Decoder</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <!-- <img src="" alt="logo" /> -->
+            </div>
+            <nav>
+                <ol>
+                    <li>
+                        <label for="dropdown">Encoders/Decoders:</label>
+                        <select name="Encoders/Decoders" id="dropdown"></select>
+                    </li>
+                    <li>RGB/HEX Converter</li>
+                    <li>Timestamp Converter</li>
+                    <li>Unit Converters</li>
+                    <li>Number Base Converters</li>
+                    <li>Text Tools/String Utilities</li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <div id="userInputControls" style="display: none">
+                <input type="text" name="userInput" id="userInput" /><br /><br />
+                <button id="convert_btn">Convert</button><br /><br />
+                <input type="text" name="userOutput" id="userOutput" />
+            </div>
+        </main>
+    </body>
+    <script type="module" src="./index.js"></script>
+
+    <footer>@ all rights received</footer>
+</html>

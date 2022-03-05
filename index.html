@@ -4,45 +4,37 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
         <link rel="stylesheet" href="./index.css" />
-
-        <script type="module" defer src="./index.js"></script>
-
-        <title>Utils for Dev</title>
+        <title>Dev Utils</title>
     </head>
     <body>
         <header>
-            <div>
-                <img src="" alt="logo" />
-            </div>
             <nav>
                 <ol>
                     <li>
-                        <label for="encoders_decoders_dropdown">Encoders/Decoders:</label>
-                        <select name="Encoders/Decoders" id="encoders_decoders_dropdown"></select>
+                        <button class="nav_main" onclick=" window.open('./src/Encoders-Decoders/index.html','_blank')">
+                            Encoders/Decoders
+                        </button>
                     </li>
-                    <li>RGB/HEX Converter</li>
-                    <li>Timestamp Converter</li>
-                    <li>Unit Converters</li>
-                    <li>Number Base Converters</li>
-                    <li>Text Tools/String Utilities</li>
+                    <li>
+                        <button class="nav_main" onclick=" window.open('./src/Rgb-Hex-converter/index.html','_blank')">
+                            RGB/HEX Converter
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav_main" disabled>Timestamp Converter</button>
+                    </li>
+                    <li>
+                        <button class="nav_main" disabled>Unit Converters</button>
+                    </li>
+                    <li>
+                        <button class="nav_main" disabled>Number Base Converters</button>
+                    </li>
+                    <li>
+                        <button class="nav_main" disabled>Text Tools/String Utilities</button>
+                    </li>
                 </ol>
             </nav>
         </header>
-        <main>
-            <div id="userInputs" style="display: none">
-                <input type="text" name="userInput" id="userInput" /><br /><br />
-                <button id="convert_btn">Convert</button><br /><br />
-                <input type="text" name="userOutput" id="userOutput" />
-            </div>
-        </main>
     </body>
-
-    <footer>@ all rights received</footer>
 </html>
