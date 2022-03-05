@@ -11,7 +11,9 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./index.css" />
-        <script defer src="./index.js"></script>
+
+        <script type="module" defer src="./index.js"></script>
+
         <title>Utils for Dev</title>
     </head>
     <body>
@@ -22,20 +24,8 @@
             <nav>
                 <ol>
                     <li>
-                        <label for="encoders_decoders">Encoders/Decoders:</label>
-
-                        <select name="Encoders/Decoders" id="encoders_decoders">
-                            <option value="" selected disabled hidden>Encoders/Decoders</option>
-                            <option value="URL Encode Decode - URL Percent Encoding and Decoding">
-                                URL Encode Decode - URL Percent Encoding and Decoding
-                            </option>
-                            <option value="Base64 Decode">Base64 Decode</option>
-                            <option value="Base64 Encode">Base64 Encode</option>
-                            <option value="MD5 Hash Generator">MD5 Hash Generator</option>
-                            <option value="SHA-1 Hash Generator">SHA-1 Hash Generator</option>
-                            <option value="SHA-256 Hash Generator">SHA-256 Hash Generator</option>
-                            <option value="SHA-512 Hash Generator">SHA-512 Hash Generator</option>
-                        </select>
+                        <label for="encoders_decoders_dropdown">Encoders/Decoders:</label>
+                        <select name="Encoders/Decoders" id="encoders_decoders_dropdown"></select>
                     </li>
                     <li>RGB/HEX Converter</li>
                     <li>Timestamp Converter</li>
@@ -46,8 +36,13 @@
             </nav>
         </header>
         <main>
-            
+            <div id="userInputs" style="display: none">
+                <input type="text" name="userInput" id="userInput" /><br /><br />
+                <button id="convert_btn">Convert</button><br /><br />
+                <input type="text" name="userOutput" id="userOutput" />
+            </div>
         </main>
     </body>
+
     <footer>@ all rights received</footer>
 </html>
